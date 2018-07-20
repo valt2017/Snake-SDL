@@ -82,7 +82,6 @@ int main(int argc, char ** argv) {
 	if (!(IMG_Init(imgFlags) & imgFlags)) {
 		std::cout << "SDL_image could not initialize! SDL_image Error:" << IMG_GetError() << std::endl;
 	}
-	IMG_Init(IMG_INIT_PNG);
 	std::vector<SDL_Texture *> Textures;
 	for (auto bitmap : Bitmaps) {
 		Textures.push_back(IMG_LoadTexture(renderer, bitmap.c_str()));
