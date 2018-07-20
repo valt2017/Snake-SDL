@@ -5,6 +5,7 @@
 #include <vector>
 
 // Ported by @valt to SDL from https://www.youtube.com/user/FamTrinli snake tutorial in SFML
+
 enum {EMPTY = 0, FOOD, SNAKE};
 const int sizeItem = 16;
 const int ItemsX = 30, ItemsY = 20;
